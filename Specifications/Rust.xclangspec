@@ -1,0 +1,454 @@
+(
+	{
+		Identifier = "xcode.lang.rust.identifier";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+			Words = (
+				"abstract",
+				"Add",
+				"alignof",
+				"as",
+				"Ascii",
+				"AsciiCast",
+				"AsciiStr",
+				"async",
+				"await",
+				"be",
+				"become",
+				"BitAnd",
+				"BitOr",
+				"BitXor",
+				"bool",
+				"Box",
+				"box",
+				"break",
+				"Buffer",
+				"Char",
+				"char",
+				"CheckedAdd",
+				"CheckedMul",
+				"CheckedSub",
+				"Clone",
+				"CloneableIterator",
+				"CloneableVector",
+				"const",
+				"Container",
+				"continue",
+				"Copy",
+				"crate",
+				"Deref",
+				"DerefMut",
+				"Div",
+				"do",
+				"DoubleEndedIterator",
+				"Drop",
+				"dyn",
+				"else",
+				"enum",
+				"Eq",
+				"Equal",
+				"Equiv",
+				"Err",
+				"ExactSize",
+				"Extendable",
+				"extern",
+				"f32",
+				"f64",
+				"false",
+				"final",
+				"Float",
+				"FloatMath",
+				"fn",
+				"for",
+				"FromIterator",
+				"GenericPath",
+				"Greater",
+				"i128",
+				"i16",
+				"i32",
+				"i64",
+				"i8",
+				"if",
+				"ImmutableCloneableVector",
+				"ImmutableEqVector",
+				"ImmutableTotalOrdVector",
+				"ImmutableVector",
+				"impl",
+				"in",
+				"Index",
+				"Int",
+				"Integer",
+				"IntoBytes",
+				"IntoMaybeOwned",
+				"IntoStr",
+				"isize",
+				"Iterator",
+				"Less",
+				"let",
+				"loop",
+				"macro",
+				"Map",
+				"match",
+				"mod",
+				"move",
+				"Mul",
+				"mut",
+				"Mutable",
+				"MutableCloneableVector",
+				"MutableDoubleEndedIterator",
+				"MutableMap",
+				"MutableSet",
+				"MutableTotalOrdVector",
+				"MutableVector",
+				"MutableVectorAllocating",
+				"Neg",
+				"None",
+				"Not",
+				"Num",
+				"NumCast",
+				"offsetof",
+				"Ok",
+				"Option",
+				"Ord",
+				"Ordering",
+				"OrdIterator",
+				"override",
+				"OwnedAsciiCast",
+				"OwnedStr",
+				"OwnedVector",
+				"Path",
+				"PosixPath",
+				"Primitive",
+				"priv",
+				"proc",
+				"pub",
+				"pure",
+				"RandomAccessIterator",
+				"RawPtr",
+				"Reader",
+				"Receiver",
+				"ref",
+				"Rem",
+				"Result",
+				"return",
+				"Seek",
+				"Self",
+				"self",
+				"Send",
+				"Sender",
+				"Set",
+				"Share",
+				"Shl",
+				"Shr",
+				"Signed",
+				"Sized",
+				"sizeof",
+				"Some",
+				"static",
+				"Str",
+				"str",
+				"StrAllocating",
+				"String",
+				"StrSlice",
+				"struct",
+				"StrVector",
+				"Sub",
+				"super",
+				"SyncSender",
+				"ToCStr",
+				"ToPrimitive",
+				"ToStr",
+				"TotalEq",
+				"TotalOrd",
+				"trait",
+				"true",
+				"try",
+				"tup",
+				"type",
+				"typeof",
+				"u128",
+				"u16",
+				"u32",
+				"u64",
+				"u8",
+				"unsafe",
+				"Unsigned",
+				"unsized",
+				"use",
+				"usize",
+				"Vec",
+				"Vector",
+				"VectorVector",
+				"virtual",
+				"where",
+				"while",
+				"WindowsPath",
+				"Writer",
+				"yield",
+			);
+			Type = "xcode.syntax.keyword";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.macro.identifier";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+			Type = "xcode.syntax.preprocessor.identifier";
+		};
+    },
+    {
+		Identifier = "xcode.lang.rust.macro.name";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+			EndChars = "!";
+			Words = (
+				"macro_rules!",
+				"assert!",
+				"fail!",
+			);
+			Type = "xcode.syntax.preprocessor.keyword";
+			AltType = "xcode.syntax.preprocessor.identifier";
+		};
+    },
+	{
+		Identifier = "xcode.lang.rust.interestingOperators";
+		Syntax = {
+			Words = (
+				"..",
+				".",
+				":",
+				"::",
+				"->",
+				"=>",
+				",",
+ 			);
+			Type = "xcode.syntax.keyword";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust";
+		Description = "Rust Coloring";
+		BasedOn = "xcode.lang.simpleColoring";
+		UsesCLikeIndentation = YES;
+		IncludeInMenu = YES;
+		Name = "Rust";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer.toplevel";
+			IncludeRules = (
+				"xcode.lang.rust.decorator.document",
+				"xcode.lang.rust.decorator",
+				"xcode.lang.rust.macro",
+				"xcode.lang.rust.block",
+				"xcode.lang.rust.bracketexpr",
+				"xcode.lang.rust.parenexpr",
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.lexer";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.rust.comment",
+				"xcode.lang.rust.comment.singleline",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.rust.identifier",
+				"xcode.lang.number",
+				"xcode.lang.rust.interestingOperators",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.macro.lexer";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.rust.comment",
+				"xcode.lang.rust.comment.singleline",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.rust.macro.identifier",
+				"xcode.lang.number",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.lexer.toplevel";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.rust.comment",
+				"xcode.lang.rust.comment.singleline",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.rust.type.declaration",
+				"xcode.lang.rust.function.declaration",
+				"xcode.lang.rust.macro.name",
+				"xcode.lang.rust.identifier",
+				"xcode.lang.number",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.decorator.document";
+		Syntax = {
+			Start = "#![";
+			End = "]";
+			Tokenizer = "xcode.lang.rust.macro.lexer";
+			Rules = (
+				"xcode.lang.rust.macro.identifier",
+				"xcode.lang.rust.decorator.parameter?",
+				"xcode.lang.rust.decorator.value?",
+			);
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.decorator";
+		Syntax = {
+			Start = "#[";
+			End = "]";
+			Tokenizer = "xcode.lang.rust.macro.lexer";
+			Rules = (
+				"xcode.lang.rust.macro.identifier",
+				"xcode.lang.rust.decorator.parameter?",
+				"xcode.lang.rust.decorator.value?",
+			);
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.decorator.parameter";
+		Syntax = {
+			Start = "(";
+			End = ")";
+			Tokenizer = "xcode.lang.rust.macro.lexer";
+			Rules = (
+				"xcode.lang.rust.identifier",
+			);
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.decorator.value";
+		Syntax = {
+			Start = "=";
+			End = "xcode.lang.string";
+			Tokenizer = "xcode.lang.rust.lexer";
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.macro";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.macro.lexer";
+			Rules = (
+				"xcode.lang.rust.macro.name",
+			);
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.type.declaration";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Rules = (
+				"type",
+				"xcode.lang.rust.identifier",
+			);
+			Type = "xcode.syntax.typedef";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.function.declaration";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Rules = (
+				"fn",
+				"xcode.lang.rust.identifier",
+				"xcode.lang.rust.parenexpr",
+				"xcode.lang.rust.function.declaration.returntype?",
+			);
+			Type = "xcode.syntax.declaration.function";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.function.declaration.returntype";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Rules = (
+				"->",
+				"xcode.lang.rust.identifier",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.block";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Start = "{";
+			End = "}";
+			Foldable = YES;
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.rust.bracketexpr",
+				"xcode.lang.rust.parenexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.parenexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Start = "(";
+			End = ")";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.rust.bracketexpr",
+				"xcode.lang.rust.block",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.bracketexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.rust.lexer";
+			Start = "[";
+			End = "]";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.rust.parenexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.comment";
+		Syntax = {
+			Start = "/*";
+			End = "*/";
+			Foldable = YES;
+			IncludeRules = (
+				"xcode.lang.url",
+				"xcode.lang.url.mail",
+				"xcode.lang.comment.mark",
+			);
+			Type = "xcode.syntax.comment";
+		};
+	},
+	{
+		Identifier = "xcode.lang.rust.comment.singleline";
+		Syntax = {
+			Start = "//";
+			End = "\n";
+			IncludeRules = (
+				"xcode.lang.url",
+				"xcode.lang.url.mail",
+				"xcode.lang.comment.mark",
+			);
+			Type = "xcode.syntax.comment";
+		};
+	},
+)

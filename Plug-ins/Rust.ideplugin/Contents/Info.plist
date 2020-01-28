@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.rust-lang.xcode.rust</string>
+	<key>CFBundleName</key>
+	<string>Rust Xcode Plug-in</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>DVTPlugInCompatibilityUUIDs</key>
+	<array>
+		<string>2FD51EF8-522D-4532-9698-980C4C497FD1</string>
+		<string>92CB09D8-3B74-4EF7-849C-99816039F0E7</string>
+		<string>A74FBA51-FFEA-4409-B976-6FC3225A6F64</string>
+		<string>BAB79788-ACEE-4291-826B-EC4667A6BEC5</string>
+	</array>
+	<key>XCPluginHasUI</key>
+	<false/>
+</dict>
+</plist>

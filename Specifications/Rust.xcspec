@@ -1,0 +1,10 @@
+(
+	{
+		Type = FileType;
+		Identifier = sourcecode.rust;
+		BasedOn = sourcecode;
+		Name = "Rust file";
+		Extensions = ( rs );
+		Language = "xcode.lang.rust";
+	}
+)

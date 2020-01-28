@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>org.rust-lang.RustApp</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template builds using Cargo build system.</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>buildToolPath</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Build Tool:</string>
+			<key>Description</key>
+			<string>The path to the build tool to use</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>$(HOME)/.cargo/bin/cargo</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetType</key>
+			<string>Legacy</string>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaLegacyTarget</string>
+			<key>Name</key>
+			<string>___PACKAGENAME___</string>
+			<key>BuildToolPath</key>
+			<string>___VARIABLE_buildToolPath___</string>
+			<key>BuildToolArgsString</key>
+			<string>$(ARGS)</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ARGS</key>
+				<string>build</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
